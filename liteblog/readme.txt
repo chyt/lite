@@ -16,7 +16,7 @@ Li†eBlog is designed to be a very lightweight and simple blogging "plugin" whi
 
 -----Version History-----
 
-January 7th, 2013, initial release, not all features yet functional
+January 7th, 2013, initial release, all features fully functional
 
 
 ------Setup and Installation------
