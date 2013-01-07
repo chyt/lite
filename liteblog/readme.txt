@@ -1,8 +1,8 @@
 -----Welcome to Li†eBlog-----
 
-http://codestringer.com/project/liteblog
+https://github.com/chyt/lite/tree/master/liteblog
 
-Thanks for installing Li†eBlog! You are currently using version 1.0, which was last updated January 8th, 2013.
+Thanks for installing Li†eBlog! You are currently using version 1.0, which was last updated January 6th, 2013.
 
 
 ------About Li†eBlog-----
@@ -16,7 +16,7 @@ Li†eBlog is designed to be a very lightweight and simple blogging "plugin" whi
 
 -----Version History-----
 
-January 8th, 2013: v1.0, initial release
+January 6th, 2013, initial release, not all features yet functional
 
 
 ------Setup and Installation------
@@ -36,7 +36,6 @@ The default username and password for accessing the admin panel in settings.php 
 ------Files and Folders------
 
 -css folder: stores css files for SimpleTabs
--delete.php
 -external.php: example of how Li†eBlog can be embedded in any external page
 -function.php: setup configurations for Li†eBlog
 -images folder: stores images used in the admin panel
@@ -52,5 +51,7 @@ The default username and password for accessing the admin panel in settings.php 
 
 
 -----Acknowledgements/Credits------
+
+Li†eBlog is coded and updated by Charles Tian (http://github.com/chyt) on GitHub. Do not download Li†eblog from any source other than https://github.com/chyt/lite/tree/master/liteblog. The link above is the only official page where Li†eBlog is updated.
 
 Li†eBlog admin panel tabs were created using SimpleTabs (http://nuevvo.com/labs/simpletabs/)
