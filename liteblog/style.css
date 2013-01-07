@@ -1,0 +1,57 @@
+.litebody{
+	width:800px;
+	//border:1px solid #000;
+	margin:0 auto;
+	padding:10px;
+}
+
+.settings_left {
+	text-align:right;
+}
+
+.settings_right {
+	text-align:left;
+}
+
+.login {
+	padding:10px;
+	border:1px solid #000;
+	width:400px;
+	margin:0 auto;
+}
+
+.navtd {
+	width:450px;
+	padding:15px;
+	vertical-align: top;
+}
+
+
+.litewrap {
+	width:1000px;
+	margin:0 auto;
+}
+
+.settings_header {
+	width:100%;
+	margin:0;
+	padding:15px;
+	background-color:#efefef;
+	border-bottom:1px solid #cccccc;
+	text-align:center;
+}
+
+.settings_nav {
+	width:100%;
+	margin:0;
+	padding:7px;
+	background-color:#f6f6f6;
+	border-bottom:1px solid #cccccc;
+	text-align:center;
+}
+
+body {
+	margin:0;
+	padding:0;
+	background-color:#f8f8f8;
+}
