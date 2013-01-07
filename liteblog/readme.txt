@@ -2,7 +2,7 @@
 
 https://github.com/chyt/lite/tree/master/liteblog
 
-Thanks for installing Li†eBlog! You are currently using version 1.0, which was last updated January 6th, 2013.
+Thanks for installing Li†eBlog! You are currently using version 1.0, which was last updated January 7th, 2013.
 
 
 ------About Li†eBlog-----
@@ -16,7 +16,7 @@ Li†eBlog is designed to be a very lightweight and simple blogging "plugin" whi
 
 -----Version History-----
 
-January 6th, 2013, initial release, not all features yet functional
+January 7th, 2013, initial release, not all features yet functional
 
 
 ------Setup and Installation------
@@ -36,12 +36,17 @@ The default username and password for accessing the admin panel in settings.php 
 ------Files and Folders------
 
 -css folder: stores css files for SimpleTabs
+-delete.php: page to delete posts
+-edit.php: page to edit posts
+-edit_confirm.php: pushes edits from edit.php to the database
 -external.php: example of how Li†eBlog can be embedded in any external page
 -function.php: setup configurations for Li†eBlog
 -images folder: stores images used in the admin panel
 -index.html: quick links to admin panel, external.php, and liteblog.php
 -js folder: stores js files for SimpleTabs
 -liteblog.php: shows what your blog currently looks like by itself
+-login.php: login form for admin page
+-logout.php: destroys session and logs out of admin
 -post.php: accessed from settings.php, where posting to blog is done
 -reset.php: accessed from settings.php, where visual customization options are reset
 -settings.php: main admin panel, where you can add new posts, edit/delete existing ones, and customize the appearance of your blog

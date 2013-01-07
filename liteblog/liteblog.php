@@ -65,7 +65,7 @@ echo '<p class="titletext" style="font-size:'.$title_size.'px;color:#'.$color_ti
 ?>
 </div>
 <div style="font-family:<? echo $font; ?>;width:<? echo $width; ?>px;padding-top:5px;margin:0 auto;text-align:right;">
-<small>Proudly Powered by LiteBlog.</small>
+<small>Proudly Powered by Li†eBlog.</small>
 </div>
 </body>
 </html>

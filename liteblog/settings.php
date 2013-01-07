@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['auth'])) {
+// if session not set, go to login page
+header("location: login.php");
+}
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -16,6 +23,15 @@ td {
 		<style type="text/css" media="screen">
 			@import "css/simpletabs.css";
 		</style>
+<script type="text/javascript">
+function confirmReset() {
+	var r=confirm('Are you sure you wish to restore your default settings? Existing customization will be lost.');
+if (r==true)
+  {
+  window.location = "reset.php";
+  }
+}
+</script>
 </head>
 
 <body style="font-family: sans-serif">
@@ -26,22 +42,22 @@ $result = mysql_query($query);
 $num_rows = mysql_num_rows($result);
 ?>
 <div class="settings_header">
-<?
+<? /*
 if ($_POST['txtUsername'] != $username || $_POST['txtPassword'] != $password) { 
 ?>
 <img src="images/login.png" />
 <?
 }
 else {
-?>
+*/?>
 <img src="images/admin.png" />
 <?
-}
+//}
 ?>
 </div>
 <br/>
 
-<?
+<? /*
 if ($_POST['txtUsername'] != $username || $_POST['txtPassword'] != $password) { 
 ?>
 
@@ -62,9 +78,10 @@ if ($_POST['txtUsername'] != $username || $_POST['txtPassword'] != $password) {
 } 
 else
 {
-?>
+*/ ?>
 
 <div class="litewrap">
+<p style="text-align:right;"><a href="logout.php">Log Out</a></p>
 	    <div class="simpleTabs">
 		        <ul class="simpleTabsNavigation">
 		            <li><a href="#">Blog Settings</a></li>
@@ -175,7 +192,7 @@ LiteBlog Width:
 </tr>
 </table>
 </form>
-<p style="text-align:center"><a href="reset.php" onclick="confirm('Are you sure you wish to restore your default settings? Existing customization will be lost.')">Restore to Default Settings</a></p>
+<p style="text-align:center"><a href="#" onclick="javascript:confirmReset();">Restore to Default Settings</a></p>
 </div>
 
                 </div>
@@ -192,7 +209,7 @@ Post Title: <input type="text" name="title" size="50" style="font-size:16px;">
 </tr>
 <tr>
 <td style="text-align:center;padding-bottom:10px;">
-Post Date: <input type="text" name="date" size="50" style="font-size:16px;">
+Post Date: <input type="text" name="date" size="50" style="font-size:16px;" value="<? echo date('n/j/Y'); ?>">
 </td>
 </tr>
 <tr>
@@ -219,7 +236,6 @@ Post Body:
 <!-- Edit Existing Posts -->
 <div style="text-align:center;padding:15px;"><img src="images/edit.png" /></div><br/>
 <div class="litebody">
-Refresh post list<br/><br/>
 <?
 if($num_rows == 0) {
 	echo "<hr/><br/>There are currently no posts.";
@@ -234,13 +250,13 @@ else {
 for ($i=1; $i<=$num_rows; $i++) {
 	$row = mysql_fetch_assoc($result);
 	echo "<tr>";
-	echo "<td>".$row['title']."</td><td>".$row['date']."</td><td>Edit</td><td><span style='color:#FF0000'>Delete</span></td>";
+	echo "<td>".$row['title']."</td><td>".$row['date']."</td><td><a href='edit.php?id=".$row['id']."'>Edit</a></td><td><span style='color:#FF0000'><a style='color:#FF0000' href='delete.php?id=".$row['id']."'>Delete</a></span></td>";
 	echo "</tr>";
 }
 ?>
 </table>
 <?
-}
+//}
 ?>
 </div>
                 </div>

@@ -1,3 +1,10 @@
+<?
+	session_start();
+    if (!isset($_SESSION['auth'])) {
+        // if session not set, go to login page
+        header("location: login.php");
+    }
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -6,7 +13,8 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body style="font-family: sans-serif">
-
+<br/><br/><br/><br/>
+<div class="login">
 <?
 require ("function.php");
 
@@ -27,7 +35,7 @@ $result = mysql_query($query);
 
 //notify of success or failure
 if ($result) {
-	echo 'Your post was saved. <a href="settings.php">Go back</a>.';
+	echo 'Your post was published. <a href="settings.php">Go back</a>.';
 }
 else {
 	echo 'There was an error posting. <a href="settings.php">Go back</a>.';
@@ -35,6 +43,6 @@ else {
 
 }
 ?>
-
+</div>
 </body>
 </html>
