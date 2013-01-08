@@ -69,3 +69,14 @@ Obviously, update the URL to where liteblog.php is actually located.
 Li†eBlog is coded and updated by Charles Tian (http://github.com/chyt) on GitHub. Do not download Li†eblog from any source other than https://github.com/chyt/lite/tree/master/liteblog. The link above is the only official page where Li†eBlog is updated.
 
 Li†eBlog admin panel tabs were created using SimpleTabs (http://nuevvo.com/labs/simpletabs/)
+
+
+-----License/Usage Agreement------
+
+Copyright (C) 2013 Charles Tian
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
