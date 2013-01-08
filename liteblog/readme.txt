@@ -16,12 +16,14 @@ Li†eBlog is designed to be a very lightweight and simple blogging "plugin" whi
 
 -----Version History-----
 
-January 7th, 2013, initial release, all features fully functional
+January 7th, 2013, v1.0.1, updated readme.txt, replaced index.html with index.php, removed external.php
+
+January 7th, 2013, v1.0 initial release, all features fully functional
 
 
 ------Setup and Installation------
 
-Setup can be done quickly and easily without any major changes to your existing website. There are two main steps to install Li†eBlog. The first is to add the proper tables to your database, and the second is to make some changes to function.php so connect your Li†eBlog installation to your database.
+Setup can be done quickly and easily without any major changes to your existing website. There are three main steps to install Li†eBlog. The first is to add the proper tables to your database. The second is to make some changes to function.php so connect your Li†eBlog installation to your database. Finally, embed Li†eBlog anywhere on your web page by using a simple line of PHP code.
 
 Step 1: database configuation
 
@@ -33,16 +35,23 @@ Once you have set up the database correctly, the next step is to connect your Li
 
 The default username and password for accessing the admin panel in settings.php is also located in function.php. It is strongly suggested that you change the username and password from their default values. The default username is "liteblog" and the default password is "password". 
 
+Step 3: embed PHP code
+
+Once the previous two steps have been completed, you can embed Li†eBlog anywhere on your website using the following PHP code:
+
+<? include ('http://sample.com/link/to/liteblog.php'); ?>
+
+Obviously, update the URL to where liteblog.php is actually located.
+
 ------Files and Folders------
 
 -css folder: stores css files for SimpleTabs
 -delete.php: page to delete posts
 -edit.php: page to edit posts
 -edit_confirm.php: pushes edits from edit.php to the database
--external.php: example of how Li†eBlog can be embedded in any external page
 -function.php: setup configurations for Li†eBlog
 -images folder: stores images used in the admin panel
--index.html: quick links to admin panel, external.php, and liteblog.php
+-index.php: info page about Li†eBlog, and example of how it can be embedded
 -js folder: stores js files for SimpleTabs
 -liteblog.php: shows what your blog currently looks like by itself
 -login.php: login form for admin page
